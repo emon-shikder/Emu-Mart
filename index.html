@@ -1,162 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap Demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emu Mart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
     <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="images/logo.png"
-              class="img-fluid"
-              alt=""
-              style="height: 30px; width: auto"
-            />
-          </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" >
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid" alt="" style="height: 30px; width: auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto"> 
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#shoes">Shoes</a>
+                        <a class="nav-link" href="#bagpack">Bagpack</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="container">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1>Wireless Noise-Cancelling Headphones</h1>
+                  <p>
+                    Experience crystal-clear sound and ultimate comfort with our
+                    premium wireless headphones. Perfect for work and travel.
+                  </p>
+                  <h2 class="price fw-bold">$300</h2>
+                  <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+                <div class="col-md-5">
+                  <img
+                    src="images/banner-images/headphone.png"
+                    class="d-block w-100"
+                    alt="Wireless Headphones"
+                  />
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1>Mega LCD TV for your Entertainment</h1>
+                  <p>
+                    Enjoy crisp, vibrant visuals on the Mega LCD TV with a
+                    50-inch screen. Perfect for home theaters and gaming rooms.
+                  </p>
+                  <h2 class="price fw-bold">$1300</h2>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+                <div class="col-md-5">
+                  <img
+                    src="images/banner-images/tv.png"
+                    class="d-block w-100"
+                    alt="Mega LCD TV"
+                  />
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1>Xbox Series X - Ultimate Gaming Experience</h1>
+                  <p>
+                    Take your gaming to the next level with the Xbox Series X.
+                    Play in 4K, enjoy lightning-fast load times, and connect with
+                    friends.
+                  </p>
+                  <h2 class="price fw-bold">$499</h2>
+                  <a href="#" class="btn btn-primary">Pre-Order Now</a>
+                </div>
+                <div class="col-md-5">
+                  <img
+                    src="images/banner-images/xbox.png"
+                    class="d-block w-100"
+                    alt="Xbox Series X"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+  
           <button
-            class="navbar-toggler"
+            class="carousel-control-prev"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#shoes">Shoes</a>
-              <a class="nav-link" href="#bagpack">Bagpack</a>
-              <a class="nav-link" href="#contact">Contact</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <div class="container">
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-7">
-                <h1>Wireless Noise-Cancelling Headphones</h1>
-                <p>
-                  Experience crystal-clear sound and ultimate comfort with our
-                  premium wireless headphones. Perfect for work and travel.
-                </p>
-                <h2 class="price fw-bold">$300</h2>
-                <a href="#" class="btn btn-primary">Shop Now</a>
-              </div>
-              <div class="col-md-5">
-                <img
-                  src="images/banner-images/headphone.png"
-                  class="d-block w-100"
-                  alt="Wireless Headphones"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-7">
-                <h1>Mega LCD TV for your Entertainment</h1>
-                <p>
-                  Enjoy crisp, vibrant visuals on the Mega LCD TV with a
-                  50-inch screen. Perfect for home theaters and gaming rooms.
-                </p>
-                <h2 class="price fw-bold">$1300</h2>
-                <a href="#" class="btn btn-primary">Buy Now</a>
-              </div>
-              <div class="col-md-5">
-                <img
-                  src="images/banner-images/tv.png"
-                  class="d-block w-100"
-                  alt="Mega LCD TV"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-7">
-                <h1>Xbox Series X - Ultimate Gaming Experience</h1>
-                <p>
-                  Take your gaming to the next level with the Xbox Series X.
-                  Play in 4K, enjoy lightning-fast load times, and connect with
-                  friends.
-                </p>
-                <h2 class="price fw-bold">$499</h2>
-                <a href="#" class="btn btn-primary">Pre-Order Now</a>
-              </div>
-              <div class="col-md-5">
-                <img
-                  src="images/banner-images/xbox.png"
-                  class="d-block w-100"
-                  alt="Xbox Series X"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container categories">
-      <div class="row text-center">
-        <div class="col-md-3 cat">
-          <h3>Watch</h3>
-          <img src="images/categories/watch.png" alt="" class="img-fluid" />
-        </div>
-        <div class="col-md-3 cat">
-          <h3>Shoes</h3>
-          <img src="images/categories/shoes.png" alt="" class="img-fluid" />
-        </div>
-        <div class="col-md-3 cat">
-          <h3>Bag</h3>
-          <img src="images/categories/bag.png" alt="" class="img-fluid" />
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
+
+    <!-- Category Section -->
+    <div class="container text-center">
+        <h2 class="category-title">Shop by Category</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3 cat watch">
+                <h3>Watch</h3>
+                <img src="images/categories/watch.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3 cat shoes">
+                <h3>Shoes</h3>
+                <img src="images/categories/shoes.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3 cat bag">
+                <h3>Bag</h3>
+                <img src="images/categories/bag.png" alt="" class="img-fluid">
+            </div>
+            
+        </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
